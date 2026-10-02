@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sindhu Addala - Portfolio</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #e9edf5;
+            color: #1f2937;
+            padding: 30px;
+        }
+
+        /* Main Canva Page */
+
+        .page {
+            max-width: 1100px;
+            min-height: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Top */
+
+        .top {
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+            padding: 45px 55px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .name h1 {
+            font-size: 46px;
+            letter-spacing: 1px;
+        }
+
+        .name h3 {
+            margin-top: 8px;
+            font-weight: 400;
+            font-size: 19px;
+        }
+
+        .name p {
+            margin-top: 18px;
+            max-width: 600px;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        /* Photo */
+
+        .photo {
+            width: 145px;
+            height: 145px;
+            border-radius: 50%;
+            background: white;
+            color: #2563eb;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 45px;
+            font-weight: bold;
+
+            border: 6px solid rgba(255, 255, 255, 0.7);
+        }
+
+        /* Main content */
+
+        .content {
+            padding: 35px 45px;
+        }
+
+        .title {
+            font-size: 20px;
+            color: #172554;
+            margin-bottom: 15px;
+            border-left: 5px solid #2563eb;
+            padding-left: 10px;
+        }
+
+        /* About */
+
+        .about {
+            background: #f5f7fb;
+            padding: 20px;
+            border-radius: 12px;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        /* Two columns */
+
+        .columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        /* Cards */
+
+        .card {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .card h3 {
+            color: #172554;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Education */
+
+        .edu {
+            margin-bottom: 15px;
+        }
+
+        .edu strong {
+            color: #2563eb;
+        }
+
+        /* Skills */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skills span {
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 7px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .skills small {
+            font-weight: 400;
+        }
+
+        /* Projects */
+
+        .project {
+            margin-bottom: 17px;
+        }
+
+        .project h3 {
+            font-size: 16px;
+            color: #172554;
+        }
+
+        .project p {
+            margin-top: 5px;
+        }
+
+        /* Achievements */
+
+        .achievement {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 12px 0;
+        }
+
+        .icon {
+            width: 35px;
+            height: 35px;
+            background: #dbeafe;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 18px;
+        }
+
+        /* Bottom */
+
+        .bottom {
+            background: #f1f5f9;
+            padding: 25px 45px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact h3 {
+            color: #172554;
+            margin-bottom: 8px;
+        }
+
+        .contact p {
+            font-size: 14px;
+            margin: 4px 0;
+        }
+
+        .links a {
+            display: inline-block;
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 9px 15px;
+            border-radius: 7px;
+            margin-left: 7px;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 750px) {
+
+            body {
+                padding: 10px;
+            }
+
+            .top {
+                padding: 30px 25px;
+                flex-direction: column;
+                text-align: center;
+                gap: 25px;
+            }
+
+            .name h1 {
+                font-size: 36px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .columns {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .bottom {
+                padding: 25px;
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .links a {
+                margin: 5px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- HEADER -->
+
+        <div class="top">
+
+            <div class="name">
+
+                <h1>Sindhu Addala</h1>
+
+                <h3>B.Tech 3rd Year | Information Technology</h3>
+
+                <p>
+                    B.Tech IT student with a strong interest in technology,
+                    programming, and practical project development.
+                    Focused on growing my skills and exploring opportunities
+                    while working towards a career in the Government Sector.
+                </p>
+
+            </div>
+
+            <div class="photo">
+                SA
+            </div>
+
+        </div>
+
+
+        <!-- CONTENT -->
+
+        <div class="content">
+
+            <!-- ABOUT -->
+
+            <h2 class="title">ABOUT ME</h2>
+
+            <div class="about">
+
+                I am a B.Tech 3rd-year Information Technology student at
+                Sasi Engineering College, Tadepalligudem. I enjoy learning
+                new technologies and working on academic projects and
+                hackathons. I am continuously improving my programming
+                and technical skills.
+
+            </div>
+
+
+            <div class="columns">
+
+                <!-- LEFT COLUMN -->
+
+                <div>
+
+                    <!-- EDUCATION -->
+
+                    <h2 class="title">EDUCATION</h2>
+
+                    <div class="card">
+
+                        <div class="edu">
+                            <strong>B.Tech – Information Technology</strong>
+                            <p>Sasi Engineering College, Tadepalligudem</p>
+                        </div>
+
+                        <div class="edu">
+                            <strong>Intermediate</strong>
+                            <p>Sri Chaitanya</p>
+                        </div>
+
+                        <div class="edu">
+                            <strong>10th</strong>
+                            <p>ZPH School</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- SKILLS -->
+
+                    <h2 class="title">TECHNICAL SKILLS</h2>
+
+                    <div class="card">
+
+                        <div class="skills">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Java <small>Learning</small></span>
+                            <span>JDBC <small>Learning</small></span>
+                            <span>MySQL <small>Learning</small></span>
+                            <span>JSP <small>Learning</small></span>
+                            <span>Git <small>Learning</small></span>
+                            <span>GitHub <small>Learning</small></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- HACKATHONS -->
+
+                    <h2 class="title">HACKATHONS</h2>
+
+                    <div class="card">
+
+                        <div class="achievement">
+
+                            <div class="icon">⚡</div>
+
+                            <div>
+                                <strong>24-Hour Hackathon</strong>
+                                <p>Participated in a 24-hour hackathon.</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="achievement">
+
+                            <div class="icon">🏆</div>
+
+                            <div>
+                                <strong>Smart India Hackathon</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT COLUMN -->
+
+                <div>
+
+                    <!-- PROJECTS -->
+
+                    <h2 class="title">PROJECTS</h2>
+
+                    <div class="card">
+
+                        <div class="project">
+
+                            <h3>ShopKart – E-Commerce System</h3>
+
+                            <p>
+                                E-commerce management system with login,
+                                registration, products, cart, checkout and
+                                order management.
+                            </p>
+
+                            <p>
+                                <strong>Tech:</strong>
+                                JSP, HTML, MySQL, Tomcat
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EXPERIENCE -->
+
+                    <h2 class="title">EXPERIENCE & ACTIVITIES</h2>
+
+                    <div class="card">
+
+                        <p>
+                            • Participated in 24-Hour Hackathon
+                        </p>
+
+                        <p>
+                            • Participated in Smart India Hackathon
+                        </p>
+
+                        <p>
+                            • Worked on academic software projects
+                        </p>
+
+                    </div>
+
+
+                    <!-- CAREER -->
+
+                    <h2 class="title">CAREER INTEREST</h2>
+
+                    <div class="card">
+
+                        <p>
+                            My primary career goal is to pursue a career in
+                            the Government Sector. Alongside my B.Tech studies,
+                            I am interested in developing my technical knowledge
+                            and problem-solving skills.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="bottom">
+
+            <div class="contact">
+
+                <h3>Let's Connect</h3>
+
+                <p>sindhu.addala24@sasi.ac.in</p>
+
+                <p>📍 Andhra Pradesh, India</p>
+
+            </div>
+
+
+            <div class="links">
+
+                <a href="#" target="_blank">GitHub</a>
+
+                <a href="#" target="_blank">LinkedIn</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
